@@ -48,4 +48,16 @@ class WeChatMessageFormatter
       </xml>
     )
   end
+
+  # Format the reply according to the WeChat JSON format for asynchronous replies,
+  # see: http://admin.wechat.com/wiki/index.php?title=Customer_Service_Messages#Text_Message
+  def format_delayed_reply(queued_message, response_content)
+    return {
+      'touser' => queued_message['sender'],
+      'msgtype' => 'text',
+      'text' => {
+        'content' => response_content
+      }
+    }
+  end
 end

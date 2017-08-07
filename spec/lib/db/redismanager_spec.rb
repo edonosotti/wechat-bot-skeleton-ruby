@@ -38,9 +38,9 @@ describe RedisManager do
       end
     end
 
-    describe "#fetch_message" do
+    describe "#fetch_queued_message" do
       it "fetches a stored message from the queue" do
-        expect { @fetch_message_result = @db_manager.fetch_message }.to_not raise_exception
+        expect { @fetch_message_result = @db_manager.fetch_queued_message }.to_not raise_exception
         expect(@fetch_message_result).to include('name' => 'test')
       end
     end

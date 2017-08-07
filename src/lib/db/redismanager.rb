@@ -17,7 +17,7 @@ class RedisManager
     @connection.rpush(RedisManager::KEY_MESSAGE_QUEUE, serialized_message)
   end
 
-  def fetch_message
+  def fetch_queued_message
     serialized_message = @connection.lpop(RedisManager::KEY_MESSAGE_QUEUE)
 
     if serialized_message != nil
