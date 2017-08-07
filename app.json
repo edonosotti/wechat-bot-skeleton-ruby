@@ -1,0 +1,28 @@
+{
+  "name": "WeChat Bot Skeleton - Ruby version",
+  "description": "A WeChat (and Weixin) chatbot skeleton in Ruby with queue/delayed messages support.",
+  "image": "heroku/ruby",
+  "repository": "https://github.com/edonosotti/wechat-bot-skeleton-ruby",
+  "keywords": ["ruby", "wechat"],
+  "addons": [
+    "scheduler",
+    {
+      "plan": "rediscloud:30",
+      "as": "REDIS"
+    }
+  ],
+  "env": {
+    "WECHAT_TOKEN": {
+      "description": "WeChat shared token to verify webhook validity.",
+      "value": ""
+    },
+    "WECHAT_APPID": {
+      "description": "WeChat Application ID",
+      "value": ""
+    },
+    "WECHAT_APPSECRET": {
+      "description": "WeChat shared secret",
+      "value": ""
+    }
+  }
+}
