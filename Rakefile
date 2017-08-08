@@ -1,3 +1,5 @@
+# Taken from: http://maxivak.com/run-rspec-tests-as-a-rake-task/
+
 require 'rake'
 require 'rspec/core/rake_task'
 
