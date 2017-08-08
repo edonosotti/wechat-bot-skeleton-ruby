@@ -13,7 +13,7 @@ class WeChatApiResource
   # The WeChat server will issue a GET request in order to verify the chatbot backend server upon configuration.
   # See: http://admin.wechat.com/wiki/index.php?title=Getting_Started#Step_2._Verify_validity_of_the_URL
   # and: http://admin.wechat.com/wiki/index.php?title=Message_Authentication
-  def get(request, params)
+  def get(_request, params)
     # Get the parameters from the query string
     signature = params['signature'] || ''
     timestamp = params['timestamp'] || ''
@@ -36,7 +36,7 @@ class WeChatApiResource
 
   # Messages will be POSTed from the WeChat server to the chatbot backend server,
   # see: http://admin.wechat.com/wiki/index.php?title=Common_Messages
-  def post(request, params)
+  def post(request, _params)
     formatter = WeChatMessageFormatter.new
     message = formatter.parse_incoming_message(request.body.read.to_s)
     # Parse the WeChat message XML format
