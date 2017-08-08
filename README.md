@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/edonosotti/wechat-bot-skeleton-ruby.svg?branch=master)](https://travis-ci.org/edonosotti/wechat-bot-skeleton-ruby)
+[![Code Climate](https://codeclimate.com/github/edonosotti/wechat-bot-skeleton-ruby/badges/gpa.svg)](https://codeclimate.com/github/edonosotti/wechat-bot-skeleton-ruby)
+
 # WeChat Bot Skeleton - Ruby version
 
 ## Introduction
