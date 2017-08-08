@@ -6,6 +6,13 @@ A WeChat (and Weixin) chatbot skeleton in `Ruby` with queue/delayed messages sup
 
 This application was written following up on the [**Building Chatbots For WeChat — Part #1**](https://chatbotsmagazine.com/building-chatbots-for-wechat-part-1-dba8f160349) article and in anticipation of Part #2.
 
+## Requirements
+
+In order to run this application, the following requirements have to be met:
+
+ * `Ruby 2.2.*`
+ * `Bundler 1.12.*`
+
 ## Configuration
 
 In order to successfully run this application, the following environment variables must be set:
