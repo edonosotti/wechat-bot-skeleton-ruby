@@ -1,0 +1,12 @@
+# Set language and version
+language: ruby
+rvm:
+  - 2.2
+
+# Install required services
+services:
+  - redis-server
+
+# Set environment variables
+env:
+  - REDIS_URL="redis://localhost:6379"
