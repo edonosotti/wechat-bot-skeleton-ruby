@@ -3,6 +3,10 @@ language: ruby
 rvm:
   - 2.2
 
+# Travis optimizations
+cache: bundler
+sudo: false
+
 # Install required services
 services:
   - redis-server
